@@ -1,0 +1,60 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/CertificationCard.astro';
+---
+
+<Layout title="Certifications">
+    <h1>Certifications & Continuous Learning</h1>
+    <p>I am a firm believer in continuous learning and professional development. Here are some of the certifications and courses I've completed to stay at the forefront of the AI/ML field.</p>
+
+    <h2>Professional Certifications</h2>
+    <div class="cert-grid">
+        <Card provider="TensorFlow" title="TensorFlow Developer Certificate" date="Jan 2022" />
+        <Card provider="Google" title="GCP Professional ML Engineer" date="Pending" />
+        <Card provider="Springboard" title="Certified Data Scientist" date="April 2021" />
+        <Card provider="Springboard" title="Certified Data Analyst" date="Nov 2020" />
+    </div>
+
+    <h2>Coursera Specializations</h2>
+    <div class="cert-grid">
+        <Card provider="Coursera" title="Deep Learning (DeepLearning.AI)" />
+        <Card provider="Coursera" title="TensorFlow Developer (DeepLearning.AI)" />
+        <Card provider="Coursera" title="AI for Medicine (DeepLearning.AI)" />
+        <Card provider="Coursera" title="Machine Learning Engineering for Production (MLOps)" />
+        <Card provider="Coursera" title="TensorFlow: Advanced Techniques" />
+        <Card provider="Coursera" title="Machine Learning for Trading (NY Institute of Finance)" />
+        <Card provider="Coursera" title="Machine Learning on Google Cloud" />
+        <Card provider="Coursera" title="Preparing for Google Cloud Certification: Machine Learning Engineer" />
+        <Card provider="Coursera" title="Advanced Machine Learning on Google Cloud" />
+        <Card provider="Coursera" title="Google Data Analytics" />
+    </div>
+
+    <h2>DataCamp Career Tracks</h2>
+    <div class="cert-grid">
+        <Card provider="DataCamp" title="Data Scientist" />
+        <Card provider="DataCamp" title="Data Analyst" />
+        <Card provider="DataCamp" title="Python Programmer" />
+        <Card provider="DataCamp" title="Machine Learning Scientist" />
+    </div>
+
+    <h2>Udacity Courses</h2>
+    <div class="cert-grid">
+        <Card provider="Udacity" title="Machine Learning for Trading" />
+        <Card provider="Udacity" title="Introduction to Machine Learning with Azure" />
+        <Card provider="Udacity" title="Time Series Forecasting" />
+    </div>
+
+    <h2>Udemy Courses</h2>
+    <div class="cert-grid">
+        <Card provider="Udemy" title="A Complete Guide on TensorFlow 2.0 using Keras API" />
+        <Card provider="Udemy" title="Bitcoin Algorithmic Trading Course + 99 Trading Robots" />
+        <Card provider="Udemy" title="Building Recommender Systems with Machine Learning and AI" />
+        <Card provider="Udemy" title="Amazing AI: Reverse Image Search" />
+        <Card provider="Udemy" title="Amazing AI: Music Editing with Deep Learning" />
+        <Card provider="Udemy" title="Zero To Mastery: TensorFlow Developer Certificate" />
+        <Card provider="Udemy" title="Zero To Mastery: Python Programmer" />
+        <Card provider="Udemy" title="LearnBERT – Most Powerful NLP Algorithm by Google" />
+    </div>
+    
+    <p>... and many more individual courses from Coursera and DataCamp focusing on specific skills in Python, SQL, Deep Learning, MLOps, and more.</p>
+</Layout>
