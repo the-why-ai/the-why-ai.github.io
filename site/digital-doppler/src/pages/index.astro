@@ -1,10 +1,65 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Competencies from '../components/Competencies.astro';
 ---
 
-<Layout title="Welcome">
-	<h1>Welcome to my Professional Portfolio</h1>
-	<p>
-		This is the splash page for my business site. Here, I will showcase my skills and experience in data science, machine learning, and artificial intelligence.
-	</p>
+<Layout 
+	title="Home" 
+	description="The professional portfolio of Alexander Lavelle, an expert AI/ML engineer specializing in deep learning, MLOps, and Generative AI."
+>
+	<div class="hero">
+		<h1>Driving Business Value with End-to-End Machine Learning</h1>
+		<p>
+			I specialize in building and deploying production-grade deep learning and generative AI solutions that solve complex business problems.
+		</p>
+		<div class="cta-buttons">
+			<a href="/projects" class="cta-primary">View My Work</a>
+			<a href="mailto:why.ai.llc@gmail.com" class="cta-secondary">Contact Me</a>
+		</div>
+	</div>
+
+	<Competencies />
+
 </Layout>
+
+<style>
+	.hero {
+		text-align: center;
+		padding: 4rem 0;
+	}
+	.hero h1 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+	.hero p {
+		font-size: 1.25rem;
+		color: #aaa;
+		margin-bottom: 2rem;
+	}
+	.cta-buttons {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+	}
+	.cta-primary, .cta-secondary {
+		padding: 0.75rem 1.5rem;
+		border-radius: 5px;
+		text-decoration: none;
+		font-weight: 500;
+		transition: background-color 0.3s ease;
+	}
+	.cta-primary {
+		background-color: #00bfff;
+		color: #111;
+	}
+	.cta-primary:hover {
+		background-color: #009acd;
+	}
+	.cta-secondary {
+		background-color: #333;
+		color: #e0e0e0;
+	}
+	.cta-secondary:hover {
+		background-color: #444;
+	}
+</style>

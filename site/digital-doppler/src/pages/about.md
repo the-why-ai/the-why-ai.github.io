@@ -1,6 +1,7 @@
 ---
 layout: ../layouts/Layout.astro
 title: 'About Me'
+description: 'Learn more about Alexander Lavelle, a research-driven AI/ML engineer with over five years of experience delivering end-to-end machine learning solutions.'
 ---
 
 # About Me

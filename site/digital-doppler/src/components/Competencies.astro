@@ -1,0 +1,43 @@
+---
+const competencies = [
+    "Deep Learning (PyTorch, TensorFlow)",
+    "Generative AI & LLMs",
+    "MLOps & Distributed Computing",
+    "Cloud Architecture (GCP)",
+    "Time Series Analysis",
+    "Natural Language Processing",
+    "Computer Vision",
+];
+---
+
+<div class="competencies">
+    <h3>Core Competencies</h3>
+    <ul>
+        {competencies.map(competency => <li>{competency}</li>)}
+    </ul>
+</div>
+
+<style>
+    .competencies {
+        margin-top: 3rem;
+        text-align: center;
+    }
+    .competencies h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .competencies ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .competencies li {
+        background: #333;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+</style>

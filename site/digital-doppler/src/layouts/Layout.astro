@@ -1,20 +1,46 @@
 ---
 interface Props {
 	title: string;
+	description?: string;
 }
 
-const { title } = Astro.props;
+const { title, description = "Expert AI/ML engineer specializing in deep learning, MLOps, and Generative AI. Building production-grade solutions to drive business value." } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>{title} | Alexander Lavelle - AI/ML Engineer</title>
+		<link rel="canonical" href={canonicalURL} />
+
+		<script type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@graph": [
+				{
+					"@type": "Person",
+					"name": "Alexander Lavelle",
+					"url": Astro.site,
+					"email": "why.ai.llc@gmail.com",
+					"jobTitle": "AI/ML Engineer"
+				},
+				{
+					"@type": "WebSite",
+					"name": "Alexander Lavelle's Portfolio",
+					"url": Astro.site,
+					"description": "The portfolio of Alexander Lavelle, an expert AI/ML engineer specializing in deep learning, MLOps, and Generative AI.",
+					"author": {
+						"@type": "Person",
+						"name": "Alexander Lavelle"
+					}
+				}
+			]
+		})} />
 	</head>
 	<body>
 		<header>
