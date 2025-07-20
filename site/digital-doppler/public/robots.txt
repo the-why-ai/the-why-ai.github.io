@@ -1,0 +1,11 @@
+# Allow all user agents to crawl the site
+User-agent: *
+Allow: /
+
+# Disallow specific pages
+Disallow: /projects
+Disallow: /philosophy
+Disallow: /open_source
+
+# Point to the sitemap
+Sitemap: https://the-why-ai.github.io/sitemap-index.xml

@@ -1,0 +1,64 @@
+---
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Why AI LLC: Expert AI/ML consulting specializing in deep learning, MLOps, and Generative AI. Building production-grade solutions to drive business value." } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} | Why AI LLC - AI/ML Consulting</title>
+		<link rel="canonical" href={canonicalURL} />
+
+		<script type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@graph": [
+				{
+					"@type": "Organization",
+					"name": "Why AI LLC",
+					"url": Astro.site,
+					"email": "why.ai.llc@gmail.com",
+					"description": "Why AI LLC provides expert AI/ML consulting services, specializing in deep learning, MLOps, and Generative AI solutions for businesses."
+				},
+				{
+					"@type": "WebSite",
+					"name": "Why AI LLC - AI/ML Consulting",
+					"url": Astro.site,
+					"description": "Official website for Why AI LLC, offering expert AI/ML consulting services in deep learning, MLOps, and Generative AI.",
+					"publisher": {
+						"@type": "Organization",
+						"name": "Why AI LLC"
+					}
+				}
+			]
+		})} />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="/">Home</a>
+				<a href="/about">About</a>
+				<a href="/certifications">Certifications</a>
+				<!-- <a href="/projects">Projects</a> -->
+				<!-- New pages, not yet public -->
+				<!-- <a href="/philosophy">Design Philosophy</a> -->
+				<!-- <a href="/open_source">Open Source</a> -->
+			</nav>
+		</header>
+		<main>
+			<slot />
+		</main>
+		<style is:global>
+			@import '../styles/global.css';
+		</style>
+	</body>
+</html>
