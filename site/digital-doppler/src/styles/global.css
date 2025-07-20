@@ -72,10 +72,21 @@ h1, h2, h3 {
     transform: translateY(-5px);
 }
 
+.cert-logo {
+    width: 48px; /* Set a fixed width for the logo container */
+    height: 48px; /* Set a fixed height for the logo container */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center;
+    align-items: center;
+}
+
+.cert-logo img,
 .cert-logo svg {
-    width: 48px;
-    height: 48px;
-    fill: #00bfff;
+    max-width: 100%; /* Ensure images and SVGs scale within the container */
+    max-height: 100%;
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    fill: #00bfff; /* Apply fill to SVGs */
 }
 
 .cert-details h4 {
