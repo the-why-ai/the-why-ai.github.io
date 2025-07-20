@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/Layout.astro
 title: 'Projects & Interests'
-description: 'A showcase of projects by Alexander Lavelle, demonstrating expertise in deep learning, generative AI, and MLOps.'
+description: 'A showcase of projects by Why AI LLC, demonstrating expertise in deep learning, generative AI, and MLOps.'
 ---
 
 # Past Projects & Interests

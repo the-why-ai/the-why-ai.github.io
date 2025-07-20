@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/Layout.astro
-title: 'About Me'
-description: 'Learn more about Alexander Lavelle, a research-driven AI/ML engineer with over five years of experience delivering end-to-end machine learning solutions.'
+title: 'About Why AI LLC'
+description: 'Learn more about Why AI LLC, an expert AI/ML consulting company specializing in deep learning, MLOps, and Generative AI solutions.'
 ---
 
 # About Me
