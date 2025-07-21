@@ -6,5 +6,4 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://the-why-ai.github.io',
   integrations: [sitemap()],
-  base: '/the-why-ai.github.io/site/digital-doppler'
 });
